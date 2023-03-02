@@ -1,0 +1,228 @@
+.s-profile-container {
+  display: flex;
+  flex-flow: column;
+  margin-left: 36%;
+  margin-right: 36%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 3px solid var(--secondary-color);
+  border-radius: 5%;
+  background-color: var(--profile-Container-color);
+}
+
+.s-personalProfile-container {
+  display: flex;
+  flex-flow: column;
+}
+
+.s-profile-display-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: min-content;
+  margin: auto;
+  cursor: pointer;
+
+  background-image: linear-gradient(
+    to right,
+    var(--secondary-color),
+    var(--secondary-color) 50%,
+    black 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: flex;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.s-profile-display-container:before {
+  content: '';
+  background: var(--secondary-color);
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.s-profile-display-container:hover {
+ background-position: 0;
+}
+
+.s-profile-display-container:hover::before {
+  width:100%;
+}
+
+.s-displayProfile-h2, .s-displayNotice-h2 {
+  text-align: center;
+  white-space: nowrap;
+  margin: 0.5rem 0;
+}
+
+.s-editProfile-h3 {
+  text-align: center;
+}
+
+.s-profile-link {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+
+    background-image: linear-gradient(
+      to right,
+      var(--secondary-color),
+      var(--secondary-color) 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.s-profile-link:before {
+    content: '';
+    background: var(--secondary-color);
+    display: block;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+.s-profile-link:hover {
+   background-position: 0;
+  }
+  
+.s-profile-link:hover::before {
+    width:100%;
+  }
+
+.s-profile-group {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    margin: 0.5rem;
+    font-size: 2rem;
+}
+
+.s-profile-desc {
+  color: var(--secondary-color);
+  font-size: 2.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.s-btn-warning:hover, 
+.s-btn-warning.hover {
+  background-color: var(--warning-color);
+  border-color: var(--warning-color);
+}
+
+.s-mediumIcon {
+  width: 2em;
+  height: 2em;
+  margin: 0 1rem;
+}
+
+/*personal profile*/
+.s-personalProfile-btn {
+  display: inline-block;
+  margin: 0rem 1rem;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.s-personalProfile-btn-primary {
+  color: #fff;
+  background-color: var(--normalBtn-color);
+  border-color: var(--normalBtn-color);
+}
+.s-personalProfile-btn-primary:focus,
+.s-personalProfile-btn-primary.focus {
+  color: #fff;
+  background-color: #286090;
+  border-color: var(--secondary-color);
+}
+.s-personalProfile-btn-primary:hover {
+  color: #fff;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.s-personalProfile-group-btn, .s-editProfile-group-btn {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+/*----------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+  .s-profile-container {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .s-profile-group {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    font-size: 1.4rem;
+  }
+
+  .s-profile-desc {
+    font-size: 1.8rem;
+  }
+
+  .s-personalProfile-group-btn, .s-editProfile-group-btn {
+    max-width: 85%;
+    width: 82%;
+    margin: 0 auto;
+    flex-flow: column;
+  }
+
+  .s-personalProfile-btn {
+    width: 28%;
+    margin: 0.3rem auto;
+    white-space: normal;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .s-editProfile-h3 {
+    font-size: 20px;
+  }
+
+  .s-displayProfile-h2, .s-displayNotice-h2 {
+    font-size: 25px;
+  }
+
+  .s-profile-container {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}

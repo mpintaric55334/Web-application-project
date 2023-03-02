@@ -1,0 +1,190 @@
+.s-verify-container, .s-form-container {
+    display: flex;
+    flex-flow: column;
+    margin-left: 32%;
+    margin-right: 32%;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 3px solid var(--secondary-color);
+    border-radius: 5%;
+}
+
+.s-form-group {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0.5rem;
+}
+
+.s-form-group-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.s-form-control {
+    display: block;
+    box-sizing: border-box;
+    width: 70%;
+    max-width: 70%;
+    min-width: 8rem;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin: 0rem 0.5rem 0rem 0rem;
+}
+
+.s-text-muted {
+    color: #777777;
+}
+
+.s-btn {
+    display: inline-block;
+    margin: 0.2rem 1rem;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.s-btn-primary {
+    color: #fff;
+    background-color: var(--normalBtn-color);
+    border-color: var(--normalBtn-color);
+}
+.s-btn-primary:focus,
+.s-btn-primary.focus {
+    color: #fff;
+    background-color: #286090;
+    border-color: var(--secondary-color);
+}
+.s-btn-primary:hover {
+    color: #fff;
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.s-link-container {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+.s-link-register {
+    background-image: linear-gradient(
+      to right,
+      var(--secondary-color),
+      var(--secondary-color) 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+.s-link-register:before {
+    content: '';
+    background: var(--secondary-color);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.s-link-register:hover {
+    background-position: 0;
+}
+
+.s-link-register:hover::before {
+    width: 100%;
+}
+
+.s-form-container-select {
+    display: block;
+    box-sizing: border-box;
+    width: 70%;
+    max-width: 70%;
+    min-width: 8rem;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+}
+
+.s-message {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.s-error {
+    color: red;
+}
+
+@media only screen and (max-width: 600px) {
+    label {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 992px) {
+    .s-verify-container, .s-form-container {
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .s-form-group {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .s-form-control {
+        width: 100%;
+        max-width: 100%;
+        min-width: 8rem;
+        font-size: 12px;
+    }
+
+    .s-form-group-btn {
+        justify-content: center;
+    }
+}

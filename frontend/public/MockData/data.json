@@ -1,0 +1,110 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Marko",
+      "lastName": "Miljković",
+      "nickname": "chacha45",
+      "avatar": "avatar-1",
+      "email": "marko.miljkovic@fer.hr",
+      "password": "$2a$10$FzoC54ghiTnzsTux3Agi4.gdbiNu1fAU2LE1PQVGO4Tfy5GJCiMbe",
+      "verificationCode": "3e6RGGowhmEusOurstW38SMcQ20uWei7ToELFft9eP7B0J2zEZLA9Q42EBcaFiVt",
+      "rankingPoints": 10,
+      "numberOfAcceptedNotices": 12,
+      "grade": 4.3,
+      "registered": false,
+      "moderator": false
+    },
+    {
+      "id": 2,
+      "firstName": "Fran",
+      "lastName": "Žužić",
+      "nickname": "Žule",
+      "avatar": "avatar-4",
+      "email": "fran.zuzic@fer.hr",
+      "password": "$2a$10$FzoC54ghiTnzsTux3Agi4.gdbiNu1fAU2LE1PQVGO4Tfy5GJCiMbe",
+      "verificationCode": "3e6RGGowhmEusOurstW38SMcQ20uWei7ToELFft9eP7B0J2zEZLA9Q42EBcaFiVt",
+      "rankingPoints": 20,
+      "numberOfAcceptedNotices": 32,
+      "grade": 4.5,
+      "registered": false,
+      "moderator": false
+    },
+    {
+      "id": 3,
+      "firstName": "Admin",
+      "lastName": "Admin",
+      "nickname": "Admin",
+      "avatar": "avatar-1",
+      "email": "admin@fer.hr",
+      "password": "$2a$10$FzoC54ghiTnzsTux3Agi4.gdbiNu1fAU2LE1PQVGO4Tfy5GJCiMbe",
+      "verificationCode": "3e6RGGowhmEusOurstW38SMcQ20uWei7ToELFft9eP7B0J2zEZLA9Q42EBcaFiVt",
+      "rankingPoints": 0,
+      "numberOfAcceptedNotices": 0,
+      "grade": 0,
+      "registered": false,
+      "moderator": true
+    },
+    {
+      "id": 20,
+      "firstName": "UserUser",
+      "lastName": "User",
+      "nickname": "UserUser",
+      "avatar": "avatar-1",
+      "email": "user@fer.hr",
+      "password": "$2a$10$FzoC54ghiTnzsTux3Agi4.gdbiNu1fAU2LE1PQVGO4Tfy5GJCiMbe",
+      "verificationCode": "3e6RGGowhmEusOurstW38SMcQ20uWei7ToELFft9eP7B0J2zEZLA9Q42EBcaFiVt",
+      "rankingPoints": 15,
+      "numberOfAcceptedNotices": 23,
+      "grade": 3.9,
+      "registered": false,
+      "moderator": false
+    }
+  ],
+  "notices": [
+    {
+      "id": 1,
+      "userId": 1,
+      "userNickname" : "chacha45",
+      "major": "Computer Science",
+      "course": "Program engineering",
+      "category": "Laboratory exercise",
+      "title": "Help with technology",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum metus nisl, ullamcorper vitae sagittis vestibulum, sollicitudin eu risus. Maecenas in lacus pharetra, tempus justo eu, molestie sapien. Mauris condimentum erat a mauris aliquam, ac lobortis odio eleifend. Vestibulum vestibulum lacinia euismod.",
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "userNickname": "Žule",
+      "major": "Electrical Engineering",
+      "course": "Automated systems",
+      "category": "Midterm exam",
+      "title": "Problem solving",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum metus nisl, ullamcorper.",
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "userId": 20,
+      "userNickname" : "UserUser",
+      "major": "Computer Science",
+      "course": "Statistics",
+      "category": "Laboratory exercise",
+      "title": "Task 4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum metus nisl, ullamcorper.'",
+      "isActive": true
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "userNickname" : "UserUser",
+      "major": "Computer Science",
+      "course": "Statistics",
+      "category": "Laboratory exercise",
+      "title": "Neaktivan",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum metus nisl, ullamcorper.'",
+      "isActive": false
+    }
+  ]
+}

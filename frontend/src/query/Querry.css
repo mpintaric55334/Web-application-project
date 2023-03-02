@@ -1,0 +1,12 @@
+.s-query-smallIcon {
+    width: 1.1em;
+    height: 1.1em;
+}
+
+.s-cursor:hover {
+    cursor: pointer;
+}
+
+.s-link-to-notice {
+    font-size: 20px;
+}

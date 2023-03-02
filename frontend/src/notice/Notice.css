@@ -1,0 +1,112 @@
+.s-center {
+    display: flex;
+    align-items: center;
+    padding-right: 0;
+}
+
+.s-no-notices-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 2rem 0 0 0;
+}
+
+.s-notice-h2 {
+    margin: 1rem 0 0 0;
+}
+
+.s-no-notices-h3{
+    margin: 1rem 0 0 0;
+    text-align: center;
+}
+
+.s-notice-background {
+    background-color: var(--notice-background);
+}
+
+.s-notice-tag {
+    background-color: var(--notice-tag);
+}
+
+.s-notice-textarea {
+    background-color: var(--notice-textarea);
+    height: 12rem;
+}
+
+.s-help-provider-notice-background {
+    background-color: var(--help-provider-notice-background);
+}
+
+.s-help-provider-notice-tag {
+    background-color: var(--help-provider-notice-tag);
+}
+
+.s-help-provider-notice-textarea {
+    background-color: var(--help-provider-notice-textarea);
+    height: 12rem;
+}
+
+.s-notice-italic {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.s-notice-query-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.s-notice-query-textarea-label {
+    width: 85%;
+    margin: 0.5rem auto;
+    font-size: 14px;
+}
+
+.s-notice-query-textarea {
+    resize: none;
+    overflow-y: auto;
+    width: 85%;
+    padding: 0.5rem;
+    margin: auto;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: var(--queryTextarea-background);
+}
+
+.s-notice-query-form-group-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.5rem auto 0 auto;
+    padding: 0.5rem;
+    width: 85%;
+}
+
+.s-notice-query-send-btn {
+    color: #fff;
+    background-color: var(--sendQueryBtn-background);
+    border-color: var(--sendQueryBtn-background);
+}
+
+.s-notice-query-send-btn:focus,
+.s-notice-query-send-btn.focus {
+    color: #fff;
+    background-color: #2ba93a;
+    border-color: var(--sendQueryBtn-background);
+}
+.s-notice-query-send-btn:hover {
+    color: #fff;
+    background-color: #2ba93a;
+    border-color: #2ba93a;
+}
+
+.s-activation-button:focus,
+.s-activation-button {
+    color: #fff;
+    background-color: #86847c;
+}
+
+.s-activation-button:hover {
+    color: #fff;
+    background-color: #514f4c;
+}

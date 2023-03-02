@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+:root {
+    --primary-color: #ADD8E6;
+    --secondary-color: #00008b;
+    --sidenav-color: #82AAE3;
+    --warning-color: #CC0000;
+    --normalBtn-color: #337ab7;
+    --notice-background: #FEFBEB;
+    --notice-tag: #DAE5D0;
+    --notice-textarea: #DAE5D0;
+    --help-provider-notice-background: #F4EEFF; 
+    --help-provider-notice-tag: #DCD6F7;
+    --help-provider-notice-textarea: #DCD6F7;
+    --profile-Container-color: #FEFBEB;
+    --select-background: #FFF7E9;
+    --queryBtn-background: #FFF7E9;
+    --queryTextarea-background: #F7FBFC;
+    --sendQueryBtn-background: #35d347;
+  }
+
+* {
+    box-sizing: border-box;
+    font-family: "Kanit";
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: black;
+}
+
